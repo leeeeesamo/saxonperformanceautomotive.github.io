@@ -1,26 +1,20 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4; /* light gray */
-  color: #1a1a1a; /* near black */
+  background-color: #f1f1f1; /* light gray */
+  color: #1a1a1a;
 }
 
 header {
-  background-color: #b30000; /* strong red */
-  color: white;
+  background-color: #b30000; /* red */
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.5rem;
 }
 
-.logo {
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.logo span {
-  font-size: 1.2rem;
-  display: block;
-  color: #f0f0f0;
+.main-logo {
+  max-width: 350px;
+  width: 90%;
+  height: auto;
 }
 
 main {
@@ -31,7 +25,8 @@ main {
 h2 {
   text-align: center;
   color: #b30000;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .service-grid {
@@ -42,12 +37,13 @@ h2 {
 }
 
 .service-card {
-  background-color: #e0e0e0; /* lighter gray */
-  border: 2px solid #b3b3b3; /* mid gray */
+  background-color: #e6e6e6; /* light gray */
+  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 1.5rem;
-  width: 280px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
 }
 
@@ -56,8 +52,15 @@ h2 {
   border-color: #b30000;
 }
 
+.service-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
 .service-card h3 {
-  color: #333;
+  color: #101010;
   margin-bottom: 0.5rem;
 }
 
@@ -66,5 +69,5 @@ footer {
   background-color: #333;
   color: white;
   padding: 1rem 0;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
