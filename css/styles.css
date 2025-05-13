@@ -19,20 +19,15 @@ body {
   margin-bottom: 1rem;
 }
 
-.title-stack {
-  text-align: center;
-  margin-top: 1rem;
-}
-
 .title-stack h1 {
-  font-size: 2rem;
+  font-size: 2.8rem; /* was 2rem */
   color: #b30000;
   font-weight: 700;
-  margin: 0.3rem 0;
+  margin: 0.4rem 0;
 }
 
 .title-stack h2 {
-  font-size: 1.3rem;
+  font-size: 1.8rem; /* was 1.3rem */
   color: #b30000;
   font-weight: 600;
   margin: 0;
@@ -91,7 +86,7 @@ h2 {
   background-color: #b30000;
   color: white;
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .cta > * {
