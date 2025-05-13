@@ -1,209 +1,70 @@
-/* Base styling */
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #121212;
-  color: #f4f4f4;
-  line-height: 1.6;
-}
-
-a {
-  color: #f4f4f4;
-  text-decoration: none;
-}
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4; /* light gray */
+  color: #1a1a1a; /* near black */
 }
 
 header {
-  background-color: #1e1e1e;
+  background-color: #b30000; /* strong red */
+  color: white;
   text-align: center;
-  padding: 40px 0;
-  border-bottom: 4px solid #ff6600;
+  padding: 2rem 1rem;
 }
 
-header .logo {
-  max-width: 120px;
-  margin-bottom: 10px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
-.hero {
-  background: linear-gradient(to right, #222, #111);
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: auto;
-  margin-bottom: 25px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #ff6600;
-  color: #fff;
+.logo {
+  font-size: 2.2rem;
   font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #e05500;
+.logo span {
+  font-size: 1.2rem;
+  display: block;
+  color: #f0f0f0;
 }
 
-/* Services */
-.services {
-  background-color: #181818;
-  padding: 50px 0;
+main {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+h2 {
   text-align: center;
-}
-
-.services h2 {
-  margin-bottom: 30px;
-  font-size: 2rem;
-  color: #fff;
+  color: #b30000;
+  margin-bottom: 1.5rem;
 }
 
 .service-grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.service-item {
-  background-color: #1f1f1f;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 20px;
+.service-card {
+  background-color: #e0e0e0; /* lighter gray */
+  border: 2px solid #b3b3b3; /* mid gray */
+  border-radius: 10px;
+  padding: 1.5rem;
   width: 280px;
-  text-align: center;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
 }
 
-.service-item:hover {
+.service-card:hover {
   transform: translateY(-5px);
-  border-color: #ff6600;
+  border-color: #b30000;
 }
 
-.service-item img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 15px;
+.service-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
-.service-item h3 {
-  color: #ff6600;
-  margin-bottom: 10px;
-}
-
-.service-item p {
-  color: #ccc;
-  font-size: 0.95rem;
-}
-
-/* About */
-.about {
-  padding: 50px 0;
-  background-color: #141414;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.about p {
-  max-width: 750px;
-  margin: auto;
-  color: #ccc;
-}
-
-/* Contact */
-.contact {
-  background-color: #1a1a1a;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.contact p {
-  color: #ccc;
-  margin-bottom: 30px;
-}
-
-form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-form input,
-form textarea {
-  padding: 12px;
-  border-radius: 5px;
-  border: none;
-  font-size: 1rem;
-  background-color: #2a2a2a;
-  color: #fff;
-}
-
-form input::placeholder,
-form textarea::placeholder {
-  color: #999;
-}
-
-form button {
-  background-color: #ff6600;
-  color: #fff;
-  padding: 12px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #e05500;
-}
-
-/* Footer */
 footer {
-  background-color: #101010;
   text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-  color: #777;
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
 }
