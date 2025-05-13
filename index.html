@@ -32,17 +32,18 @@
       </div>
     </section>
 
-	<section class="cta">
-	  <h2>Request a Mechanic</h2>
-	  <p>Submit your details and we’ll get back to you as soon as possible.</p>
+    <section class="cta">
+      <h2>Request a Mechanic</h2>
+      <p>Submit your details and we’ll get back to you as soon as possible.</p>
 
-	  <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="contact-form">
-		<input type="text" name="name" placeholder="Your Name" required />
-		<input type="email" name="email" placeholder="Your Email" required />
-		<textarea name="message" placeholder="How can we help you?" rows="5" required></textarea>
-		<button type="submit">Send Request</button>
-	  </form>
-	</section>
+      <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="contact-form">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="How can we help you?" rows="5" required></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+    </section>
   </main>
 
   <footer>
