@@ -1,3 +1,4 @@
+/* General page styling */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -5,18 +6,26 @@ body {
   color: #1a1a1a;
 }
 
-header {
-  background-color: #b30000; /* red */
+/* Header with icon logo and red title */
+.hero-header {
+  background-color: #f0f0f0; /* light gray background */
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
 }
 
-.main-logo {
-  max-width: 350px;
-  width: 90%;
+.logo-icon {
+  max-width: 180px;
   height: auto;
+  margin-bottom: 1rem;
 }
 
+.hero-header h1 {
+  font-size: 1.8rem;
+  color: #b30000; /* red */
+  margin: 0;
+}
+
+/* Main content area */
 main {
   padding: 2rem;
   background-color: #ffffff;
@@ -29,6 +38,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
+/* Service grid */
 .service-grid {
   display: flex;
   justify-content: center;
@@ -36,6 +46,7 @@ h2 {
   flex-wrap: wrap;
 }
 
+/* Each service card */
 .service-card {
   background-color: #e6e6e6; /* light gray */
   border: 1px solid #ccc;
@@ -52,6 +63,7 @@ h2 {
   border-color: #b30000;
 }
 
+/* Service image styling */
 .service-card img {
   max-width: 100%;
   height: 150px;
@@ -59,11 +71,13 @@ h2 {
   margin-bottom: 1rem;
 }
 
+/* Service heading text */
 .service-card h3 {
   color: #101010;
   margin-bottom: 0.5rem;
 }
 
+/* Footer */
 footer {
   text-align: center;
   background-color: #333;
