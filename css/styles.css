@@ -82,7 +82,11 @@ body {
 }
 
 .services-overview .section-header h2 {
-  color: white;
+  color: white !important;
+}
+
+.services-overview .section-header p {
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .section-header {
