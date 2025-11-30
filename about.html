@@ -13,7 +13,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  <header class="page-hero">
+  <header class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero-banner.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="container">
       <nav class="main-nav">
         <a href="/" class="logo">
@@ -32,23 +32,83 @@
       </nav>
 
       <div class="hero-content">
-        <h1>About Saxon Performance</h1>
-        <h2>Professional mobile mechanic and diagnostic services built on honesty, skill, and convenience.</h2>
+        <h1>ABOUT SAXON PERFORMANCE</h1>
+        <h2>Professional Mobile Mechanic & Diagnostic Services</h2>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="section">
+    <!-- Section 1 - Company Story -->
+    <section class="section company-story">
       <div class="container">
-        <div class="section-header fade-in-up">
-          <h2>About Saxon Performance</h2>
+        <div class="two-column-layout">
+          <div class="column-text">
+            <h2>OUR STORY</h2>
+            <p>Saxon Performance Automotive was built on the belief that automotive care should be honest, convenient, and reliable. With extensive experience in diagnostics, mechanical repair, and mobile service, we bring the shop directly to your home, workplace, or roadside.</p>
+            <p>We focus on accurate troubleshooting, transparent communication, and delivering the right solution the first time. No towing. No upsells. No wasted time.</p>
+          </div>
+          <div class="column-visual">
+            <div class="visual-panel">
+              <img src="images/diagnostics.PNG" alt="Diagnostic equipment" class="panel-image" />
+            </div>
+          </div>
         </div>
-        <div class="fade-in-up">
-          <p>Saxon Performance Automotive provides reliable, professional mobile mechanic and diagnostic services throughout the Birmingham area. Built on honesty, skill, and convenience, we bring a full-service automotive experience directly to you.</p>
-          <p>With extensive experience in troubleshooting, diagnostics, and mechanical repair, we focus on delivering accurate results the first time. No upselling, no unnecessary delays &mdash; just transparent service, fair pricing, and dependable workmanship.</p>
-          <p>Whether your vehicle won&rsquo;t start, your check engine light is on, or you simply need a trusted mechanic who comes to you, Saxon Performance is here to help you get back on the road with confidence.</p>
+      </div>
+    </section>
+
+    <!-- Section 2 - Experience & Values -->
+    <section class="section values-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>WHY CUSTOMERS TRUST US</h2>
         </div>
+        
+        <div class="values-grid">
+          <div class="value-block">
+            <h3>HONEST SERVICE</h3>
+            <p>Clear explanations, transparent pricing, no hidden fees.</p>
+          </div>
+          
+          <div class="value-block">
+            <h3>CERTIFIED EXPERTISE</h3>
+            <p>Experienced technician skilled in diagnostics and mechanical repair.</p>
+          </div>
+          
+          <div class="value-block">
+            <h3>MOBILE CONVENIENCE</h3>
+            <p>We come to you — home, work, or roadside.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 - Service Area Call-out -->
+    <section class="section service-area-callout">
+      <div class="container">
+        <div class="section-header">
+          <h2>SERVING BIRMINGHAM & SURROUNDING AREAS</h2>
+          <p class="section-subtitle">Based in Birmingham, we proudly provide mobile mechanic and diagnostic services to Hoover, Trussville, Pelham, Alabaster, and nearby communities.</p>
+        </div>
+        
+        <div class="service-areas-list">
+          <span>Birmingham</span>
+          <span>Hoover</span>
+          <span>Trussville</span>
+          <span>Pelham</span>
+          <span>Alabaster</span>
+          <span>Vestavia Hills</span>
+          <span>Homewood</span>
+          <span>Mountain Brook</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="cta-strip">
+      <div class="container">
+        <h2>READY TO GET STARTED?</h2>
+        <a href="contact.html" class="btn btn-primary">Request Service</a>
       </div>
     </section>
   </main>
@@ -100,6 +160,7 @@
       </div>
     </div>
   </footer>
+
 <script>
     // Mobile navigation toggle
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
