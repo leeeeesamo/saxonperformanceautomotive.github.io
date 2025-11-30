@@ -280,6 +280,7 @@ p {
   margin-bottom: 1.5rem;
   line-height: 1.2;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
 }
 
 .hero-content h2 {
@@ -287,6 +288,7 @@ p {
   font-weight: 400;
   margin-bottom: 2.5rem;
   opacity: 0.9;
+  color: rgba(255, 255, 255, 0.92);
   line-height: 1.6;
 }
 
