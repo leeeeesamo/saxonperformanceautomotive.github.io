@@ -13,78 +13,283 @@
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  <!-- Header with Navigation -->
-  <header class="hero-header">
+  <!-- Hero Section -->
+  <header class="hero-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hero-banner.png');">
     <div class="container">
-      <img src="images/saxonlogo.png" alt="Saxon Performance Automotive Logo" class="logo-icon fade-in-up" />
-      <div class="title-stack fade-in-up delay-1">
-        <h1>Saxon Performance</h1>
-        <h2>Automotive & Mobile Mechanic Services</h2>
-        <div class="hero-cta">
-          <a href="#contact" class="btn">Get a Quote</a>
+      <nav class="main-nav">
+        <a href="/" class="logo">
+          <img src="images/saxonlogo.png" alt="Saxon Performance Automotive" class="logo-img" />
+        </a>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact" class="btn btn-nav">Contact</a>
+        </div>
+      </nav>
+      
+      <div class="hero-content">
+        <h1 class="fade-in-up">Mobile Mechanic & Precision Auto Diagnostics</h1>
+        <h2 class="fade-in-up delay-1">On-site diagnostics, repair, and convenience—trusted expertise for any make or model.</h2>
+        <div class="hero-cta fade-in-up delay-2">
+          <a href="#contact" class="btn btn-primary">Request Service</a>
           <a href="tel:+1234567890" class="btn btn-outline">
             <i class="fas fa-phone-alt"></i> Call Now
           </a>
+        </div>
+        <div class="trust-badges fade-in-up delay-3">
+          <span><i class="fas fa-certificate"></i> Certified Tech</span>
+          <span><i class="fas fa-bolt"></i> Quick Response</span>
+          <span><i class="fas fa-hand-holding-usd"></i> Honest Pricing</span>
+          <span><i class="fas fa-star"></i> 5-Star Service</span>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Services Section -->
-    <section class="section services" id="services">
+    <!-- Services Overview -->
+    <section class="section services-overview" id="services">
       <div class="container">
-        <div class="section-title fade-in-up">
-          <h2>Our Expert Services</h2>
-          <p>Comprehensive automotive care with the convenience of mobile service. We bring the workshop to you.</p>
+        <div class="section-header fade-in-up">
+          <h2>Our Core Services</h2>
+          <p class="section-subtitle">Expert automotive care delivered with convenience and precision</p>
         </div>
         
-        <div class="service-grid">
+        <div class="services-grid">
+          <!-- Mobile Mechanic Card -->
           <div class="service-card fade-in-up delay-1">
-            <div class="service-icon">
-              <img src="images/diagnostics.png" alt="Diagnostics and Repair" />
+            <div class="service-image">
+              <img src="images/mobile.PNG" alt="Mobile Mechanic service vehicle" loading="lazy">
             </div>
             <div class="service-content">
-              <h3>Diagnostics & Repair</h3>
-              <p>State-of-the-art diagnostic tools and expert technicians to identify and fix any issue with precision and efficiency.</p>
-              <a href="#contact" class="service-link">
-                Learn More
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          
-          <div class="service-card fade-in-up delay-2">
-            <div class="service-icon">
-              <img src="images/mobile.png" alt="Mobile Mechanic" />
-            </div>
-            <div class="service-content">
+              <div class="service-icon">
+                <i class="fas fa-tools"></i>
+              </div>
               <h3>Mobile Mechanic</h3>
-              <p>Complete automotive service at your doorstep. We come to your home, office, or roadside with all necessary tools and parts.</p>
-              <a href="#contact" class="service-link">
-                Schedule Service
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
+              <p>Professional auto repair services at your convenience. No need to visit a shop—we come to you!</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> On-site repairs at your home or workplace</li>
+                <li><i class="fas fa-check-circle"></i> No towing needed - we bring the shop to you</li>
+                <li><i class="fas fa-check-circle"></i> Same-day service available</li>
+                <li><i class="fas fa-check-circle"></i> All makes and models</li>
+              </ul>
+              <a href="services/mobile-mechanic.html" class="service-link">
+                Learn More <i class="fas fa-arrow-right"></i>
               </a>
             </div>
           </div>
           
-          <div class="service-card fade-in-up delay-3">
-            <div class="service-icon">
-              <img src="images/maintenance.png" alt="Preventive Maintenance" />
+          <!-- Diagnostics & Repair Card -->
+          <div class="service-card fade-in-up delay-2">
+            <div class="service-image">
+              <img src="images/diagnostics.PNG" alt="Diagnostics and Repair" loading="lazy">
             </div>
             <div class="service-content">
-              <h3>Preventive Maintenance</h3>
-              <p>Keep your vehicle running smoothly with our comprehensive maintenance programs tailored to your driving needs.</p>
-              <a href="#contact" class="service-link">
-                View Plans
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
+              <div class="service-icon">
+                <i class="fas fa-car-battery"></i>
+              </div>
+              <h3>Diagnostics & Repair</h3>
+              <p>Advanced diagnostic technology to accurately identify and fix any vehicle issues.</p>
+              <ul class="service-features">
+                <li><i class="fas fa-check-circle"></i> Check engine light diagnostics</li>
+                <li><i class="fas fa-check-circle"></i> Electrical system troubleshooting</li>
+                <li><i class="fas fa-check-circle"></i> Engine and drivability issues</li>
+                <li><i class="fas fa-check-circle"></i> Computer system analysis</li>
+              </ul>
+              <a href="services/diagnostics-repair.html" class="service-link">
+                Learn More <i class="fas fa-arrow-right"></i>
               </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="service-cta fade-in-up delay-3">
+          <p>Need help with something else? We handle all types of automotive repairs and maintenance.</p>
+          <a href="#contact" class="btn btn-primary">Contact Us Today</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-choose-us">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Why Choose Saxon Performance Automotive</h2>
+          <p class="section-subtitle">Experience the difference with our customer-focused approach</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card fade-in-up">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile Convenience</h3>
+            <p>We come to your home, office, or roadside. No need to take time off work or arrange transportation.</p>
+          </div>
+          
+          <div class="feature-card fade-in-up delay-1">
+            <div class="feature-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <h3>Advanced Diagnostics</h3>
+            <p>State-of-the-art diagnostic equipment to quickly and accurately identify issues with your vehicle.</p>
+          </div>
+          
+          <div class="feature-card fade-in-up delay-2">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>No Upsells</h3>
+            <p>Honest assessments and recommendations. We'll never suggest unnecessary repairs.</p>
+          </div>
+          
+          <div class="feature-card fade-in-up delay-3">
+            <div class="feature-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <h3>Fair & Transparent Pricing</h3>
+            <p>Upfront pricing with no hidden fees. We'll provide a detailed estimate before any work begins.</p>
+          </div>
+          
+          <div class="feature-card fade-in-up delay-4">
+            <div class="feature-icon">
+              <i class="fas fa-car"></i>
+            </div>
+            <h3>All Makes & Models</h3>
+            <p>Expert service for all vehicle types, from compact cars to SUVs and light trucks.</p>
+          </div>
+          
+          <div class="feature-card fade-in-up delay-5">
+            <div class="feature-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Certified Expertise</h3>
+            <p>ASE Certified technicians with years of experience in the automotive industry.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Built on Skill, Integrity, and a Commitment to Quality Work.</h2>
+          <p class="section-subtitle">Saxon Performance Automotive is run by a dedicated technician with years of experience in diagnostics, mechanical repair, and mobile service. The mission is simple: provide honest, dependable automotive care without the hassle of towing, long waits, or dealership prices. Whether you're at home, work, or stuck roadside, we bring professional diagnostics and repair directly to you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Real Customers. Real Results.</h2>
+          <p class="section-subtitle">What drivers around Birmingham and the surrounding areas say about Saxon Performance Automotive.</p>
+        </div>
+        
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Professional, fast, and honest. Came to my house, diagnosed the issue within minutes, and had the car running the same afternoon. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Chris J.</h4>
+                <p>5-Star Review</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Lifesaver! My car wouldn’t start in my driveway and Saxon Performance showed up within the hour. Very knowledgeable and explained everything clearly."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Amanda P.</h4>
+                <p>5-Star Review</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Way better than towing to a shop. He ran full diagnostics on-site, found a bad sensor, and got it fixed right on the spot. Great service!"</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Marcus T.</h4>
+                <p>5-Star Review</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Finally a mechanic I trust. Transparent pricing and no upselling. He showed me exactly what failed and why."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Rachel K.</h4>
+                <p>5-Star Review</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"I run a small business and can’t afford downtime. He came to my workplace, fixed my truck, and had me back on the road quickly."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>David L.</h4>
+                <p>5-Star Review</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Highly reliable and very skilled. Diagnosed an electrical problem two shops couldn’t figure out."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Samantha W.</h4>
+                <p>5-Star Review</p>
+              </div>
             </div>
           </div>
         </div>
@@ -119,9 +324,8 @@
             <label for="service" class="form-label">Service Needed</label>
             <select id="service" name="service" class="form-control" required>
               <option value="" disabled selected>Select a service</option>
-              <option value="diagnostics">Diagnostics & Repair</option>
+              <option value="diagnostics">Diagnostics &amp; Repair</option>
               <option value="mobile">Mobile Mechanic</option>
-              <option value="maintenance">Preventive Maintenance</option>
               <option value="other">Other (Please Specify)</option>
             </select>
           </div>
@@ -138,55 +342,34 @@
       </div>
     </section>
     
-    <!-- Testimonials Section -->
-    <section class="section testimonials">
+    <!-- Service Area Section -->
+    <section class="section service-area" id="service-area">
       <div class="container">
-        <div class="section-title fade-in-up">
-          <h2>What Our Clients Say</h2>
-          <p>Don't just take our word for it. Here's what our satisfied customers have to say about our service.</p>
-        </div>
-        
-        <div class="testimonial-grid">
-          <div class="testimonial-card fade-in-up delay-1">
-            <div class="testimonial-content">
-              <p>"Outstanding service! The mechanic arrived on time, diagnosed the issue quickly, and had my car running like new. Will definitely use Saxon Performance again!"</p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">
-                <i class="fas fa-user"></i>
-              </div>
-              <div class="author-info">
-                <h4>Michael R.</h4>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
+        <div class="service-area-content">
+          <div class="section-header fade-in-up">
+            <h2>Service Area</h2>
+            <p class="section-subtitle">Saxon Performance Automotive proudly provides mobile mechanic and diagnostic services across the greater Birmingham region. If you're at home, at work, or roadside, we come to you.</p>
           </div>
-          
-          <div class="testimonial-card fade-in-up delay-2">
-            <div class="testimonial-content">
-              <p>"The convenience of having a mechanic come to my office was a game-changer. Professional, knowledgeable, and reasonably priced. Highly recommended!"</p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">
-                <i class="fas fa-user"></i>
-              </div>
-              <div class="author-info">
-                <h4>Sarah K.</h4>
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
+
+          <ul class="service-area-list">
+            <li>Birmingham</li>
+            <li>Hoover</li>
+            <li>Vestavia Hills</li>
+            <li>Pelham</li>
+            <li>Alabaster</li>
+            <li>Trussville</li>
+            <li>Homewood</li>
+            <li>Mountain Brook</li>
+            <li>Bessemer</li>
+          </ul>
+
+          <div class="service-area-map fade-in-up">
+            <iframe
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
