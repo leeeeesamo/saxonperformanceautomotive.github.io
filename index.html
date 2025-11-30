@@ -7,7 +7,7 @@
   <meta name="description" content="Professional mobile automotive services. We come to you for diagnostics, repairs, and maintenance. Serving your area with excellence." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
@@ -18,24 +18,27 @@
     <div class="container">
       <nav class="main-nav">
         <a href="/" class="logo">
-          <img src="images/saxon-logo2.png" alt="Saxon Performance Automotive" class="logo-img" />
+          <img src="images/logo.png" alt="Saxon Performance Automotive" class="logo-img" />
         </a>
         <div class="nav-links">
           <a href="#services">Services</a>
           <a href="#about">About</a>
           <a href="gallery.html">Gallery</a>
           <a href="#testimonials">Testimonials</a>
-          <a href="#contact" class="btn btn-nav">Contact</a>
+          <a href="tel:205-778-8481" class="btn btn-nav">Call (205) 778-8481</a>
         </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
       </nav>
       
       <div class="hero-content">
-        <h1 class="fade-in-up">Mobile Mechanic & Precision Auto Diagnostics</h1>
-        <h2 class="fade-in-up delay-1">On-site diagnostics, repair, and convenience—trusted expertise for any make or model.</h2>
+        <h1 class="fade-in-up">Mobile Mechanic & Diagnostic Repair — We Come to You.</h1>
+        <h2 class="fade-in-up delay-1">Fast, reliable on-site automotive service and accurate diagnostics for all makes and models.</h2>
         <div class="hero-cta fade-in-up delay-2">
-          <a href="#contact" class="btn btn-primary">Request Service</a>
-          <a href="tel:+1234567890" class="btn btn-outline">
-            <i class="fas fa-phone-alt"></i> Call Now
+          <a href="tel:205-778-8481" class="btn btn-primary">Call (205) 778-8481</a>
+          <a href="contact.html" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Form
           </a>
         </div>
         <div class="trust-badges fade-in-up delay-3">
@@ -49,65 +52,30 @@
   </header>
 
   <main>
-    <!-- Services Overview -->
+    <!-- Our Services -->
     <section class="section services-overview" id="services">
       <div class="container">
-        <div class="section-header fade-in-up">
-          <h2>Our Core Services</h2>
-          <p class="section-subtitle">Expert automotive care delivered with convenience and precision</p>
+        <div class="services-heading fade-in-up">
+          <h2>OUR SERVICES</h2>
+          <span class="services-heading-underline"></span>
         </div>
         
         <div class="services-grid">
-          <!-- Mobile Mechanic Card -->
           <div class="service-card fade-in-up delay-1">
-            <div class="service-image">
-              <img src="images/mobile.PNG" alt="Mobile Mechanic service vehicle" loading="lazy">
-            </div>
             <div class="service-content">
-              <div class="service-icon">
-                <i class="fas fa-tools"></i>
-              </div>
-              <h3>Mobile Mechanic</h3>
-              <p>Professional auto repair services at your convenience. No need to visit a shop—we come to you!</p>
-              <ul class="service-features">
-                <li><i class="fas fa-check-circle"></i> On-site repairs at your home or workplace</li>
-                <li><i class="fas fa-check-circle"></i> No towing needed - we bring the shop to you</li>
-                <li><i class="fas fa-check-circle"></i> Same-day service available</li>
-                <li><i class="fas fa-check-circle"></i> All makes and models</li>
-              </ul>
-              <a href="services/mobile-mechanic.html" class="service-link">
-                Learn More <i class="fas fa-arrow-right"></i>
-              </a>
+              <h3>MOBILE MECHANIC</h3>
+              <p>On-site automotive service at your home, workplace, or roadside. Fast response. No towing required.</p>
+              <a href="services/mobile-mechanic.html" class="service-link service-link-text">Learn More &rarr;</a>
             </div>
           </div>
           
-          <!-- Diagnostics & Repair Card -->
           <div class="service-card fade-in-up delay-2">
-            <div class="service-image">
-              <img src="images/diagnostics.PNG" alt="Diagnostics and Repair" loading="lazy">
-            </div>
             <div class="service-content">
-              <div class="service-icon">
-                <i class="fas fa-car-battery"></i>
-              </div>
-              <h3>Diagnostics & Repair</h3>
-              <p>Advanced diagnostic technology to accurately identify and fix any vehicle issues.</p>
-              <ul class="service-features">
-                <li><i class="fas fa-check-circle"></i> Check engine light diagnostics</li>
-                <li><i class="fas fa-check-circle"></i> Electrical system troubleshooting</li>
-                <li><i class="fas fa-check-circle"></i> Engine and drivability issues</li>
-                <li><i class="fas fa-check-circle"></i> Computer system analysis</li>
-              </ul>
-              <a href="services/diagnostics-repair.html" class="service-link">
-                Learn More <i class="fas fa-arrow-right"></i>
-              </a>
+              <h3>DIAGNOSTICS &amp; REPAIR</h3>
+              <p>Accurate troubleshooting and professional repair for all makes and models. Solving issues correctly the first time.</p>
+              <a href="services/diagnostics-repair.html" class="service-link service-link-text">Learn More &rarr;</a>
             </div>
           </div>
-        </div>
-        
-        <div class="service-cta fade-in-up delay-3">
-          <p>Need help with something else? We handle all types of automotive repairs and maintenance.</p>
-          <a href="#contact" class="btn btn-primary">Contact Us Today</a>
         </div>
       </div>
     </section>
@@ -381,7 +349,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-about">
-          <img src="images/saxon-logo2.png" alt="Saxon Performance Automotive" class="footer-logo" />
+          <img src="images/saxon-logo.png" alt="Saxon Performance Automotive" class="footer-logo" />
           <p>Your trusted partner for professional automotive services. We bring the workshop to you with our mobile mechanic services.</p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -407,15 +375,15 @@
           <ul class="contact-info">
             <li>
               <i class="fas fa-map-marker-alt"></i>
-              <span>123 Auto Service Rd,<br>Your City, ST 12345</span>
+              <span>Birmingham, AL &amp; Surrounding Areas</span>
             </li>
             <li>
               <i class="fas fa-phone-alt"></i>
-              <a href="tel:+1234567890">(123) 456-7890</a>
+              <a href="tel:205-778-8481">(205) 778-8481</a>
             </li>
             <li>
               <i class="fas fa-envelope"></i>
-              <a href="mailto:info@saxonperformance.com">info@saxonperformance.com</a>
+              <a href="mailto:saxonperformanceauto@gmail.com">saxonperformanceauto@gmail.com</a>
             </li>
             <li>
               <i class="fas fa-clock"></i>
@@ -437,6 +405,34 @@
   </a>
   
   <script>
+    // Mobile navigation toggle
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileNavToggle && navLinks) {
+      mobileNavToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-open');
+        const icon = mobileNavToggle.querySelector('i');
+        if (navLinks.classList.contains('mobile-open')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-times');
+        } else {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        }
+      });
+      
+      // Close mobile nav when clicking on a link
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('mobile-open');
+          const icon = mobileNavToggle.querySelector('i');
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        });
+      });
+    }
+    
     // Back to Top Button
     const backToTop = document.getElementById('back-to-top');
     

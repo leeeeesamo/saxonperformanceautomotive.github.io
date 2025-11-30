@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnostics &amp; Repair | Saxon Performance Automotive</title>
+  <meta name="description" content="Accurate diagnostics and repair for electrical, mechanical, and driveability issues from Saxon Performance Automotive." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header class="page-hero">
+    <div class="container">
+      <nav class="main-nav">
+        <a href="/" class="logo">
+          <img src="../images/logo.png" alt="Saxon Performance Automotive" class="logo-img" />
+        </a>
+        <div class="nav-links">
+          <a href="../index.html#services">Services</a>
+          <a href="../about.html">About</a>
+          <a href="../gallery.html">Gallery</a>
+          <a href="../index.html#testimonials">Testimonials</a>
+          <a href="tel:205-778-8481" class="btn btn-nav">Call (205) 778-8481</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <div class="hero-content">
+        <h1>DIAGNOSTICS &amp; REPAIR</h1>
+        <h2>Accurate troubleshooting and repair for electrical, mechanical, and driveability issues.</h2>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Diagnostics &amp; Repair</h2>
+        </div>
+
+        <div class="fade-in-up">
+          <p>Our diagnostics and repair service focuses on finding the true source of vehicle issues and fixing them correctly the first time.</p>
+
+          <h3>Diagnostic Process</h3>
+          <p>We use a structured, step-by-step diagnostic approach informed by live data, fault codes, and real-world testing. Instead of guessing and replacing parts, we verify the cause of the issue before recommending repairs.</p>
+
+          <h3>Common Problems Solved</h3>
+          <ul>
+            <li>Check engine lights and stored fault codes</li>
+            <li>Engine misfires and rough running</li>
+            <li>Overheating and cooling system issues</li>
+            <li>Electrical faults, shorts, and sensor problems</li>
+            <li>Driveability issues such as hesitation or loss of power</li>
+          </ul>
+
+          <h3>Our Equipment</h3>
+          <p>We use modern scan tools, lab scopes, and testing equipment designed for today&rsquo;s complex vehicles. This allows us to capture live data, run active tests, and confirm that repairs have resolved the issue.</p>
+
+          <div class="mt-4">
+            <a href="../contact.html" class="btn btn-primary">Schedule Diagnostics</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <img src="../images/saxon-logo.png" alt="Saxon Performance Automotive" class="footer-logo" />
+          <p>Professional mobile mechanic and diagnostic services serving the Birmingham region.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:205-778-8481">(205) 778-8481</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:saxonperformanceauto@gmail.com">saxonperformanceauto@gmail.com</a>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon&ndash;Fri: 8:00 AM &ndash; 6:00 PM<br>Sat: 9:00 AM &ndash; 3:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Saxon Performance. All rights reserved. Professional Mobile Mechanic &amp; Diagnostic Services Serving the Birmingham Region.</p>
+      </div>
+    </div>
+  </footer>
+<script>
+    // Mobile navigation toggle
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileNavToggle && navLinks) {
+      mobileNavToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-open');
+        const icon = mobileNavToggle.querySelector('i');
+        if (navLinks.classList.contains('mobile-open')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-times');
+        } else {
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        }
+      });
+      
+      // Close mobile nav when clicking on a link
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('mobile-open');
+          const icon = mobileNavToggle.querySelector('i');
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
