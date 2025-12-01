@@ -261,6 +261,18 @@ p {
   min-height: 60px;
 }
 
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 0.5rem;
+  position: relative;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -1640,12 +1652,6 @@ footer {
   
   .mobile-nav-toggle {
     display: block;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 1000;
   }
   
   .nav-links.mobile-open {

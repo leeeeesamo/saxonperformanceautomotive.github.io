@@ -257,7 +257,7 @@
             // Remove body scroll lock
             document.body.style.overflow = '';
           }
-        });
+        }, { passive: true });
         
         // Handle window resize - close mobile menu if switching to desktop
         window.addEventListener('resize', function() {
