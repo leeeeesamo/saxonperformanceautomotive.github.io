@@ -1354,16 +1354,142 @@ main {
 .contact-layout {
   display: grid;
   grid-template-columns: 2fr 1.2fr;
-  gap: 2.5rem;
+  gap: 3rem;
   align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background: white;
+  border-radius: 10px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-sidebar {
+  background: white;
+  border-radius: 10px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .contact-sidebar h3 {
-  margin-bottom: 1.5rem;
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--brand-navy);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-sidebar .contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-sidebar .contact-info li {
-  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.8rem;
+  padding: 0;
+}
+
+.contact-sidebar .contact-info li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-sidebar .contact-info i {
+  color: var(--brand-red);
+  font-size: 1.1rem;
+  width: 20px;
+  margin-right: 1rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.contact-sidebar .contact-info a,
+.contact-sidebar .contact-info span {
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contact-sidebar .contact-info a:hover {
+  color: var(--brand-red);
+}
+
+/* Form Improvements */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--brand-navy);
+  font-size: 0.9rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  background: white;
+  text-align: left;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--brand-red);
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Button Improvements */
+.contact-form .btn {
+  background: var(--brand-red);
+  border-color: var(--brand-red);
+  color: white;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+.contact-form .btn:hover {
+  background: #c82333;
+  border-color: #c82333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+}
+
+.contact-form .btn:active {
+  transform: translateY(0);
+}
+
+/* Reduce spacing after hero section */
+#contact-main {
+  padding-top: 4rem;
 }
 
 /* CTA Section */
@@ -1410,51 +1536,6 @@ main {
   margin-right: auto;
 }
 
-/* Contact Form */
-.contact-form {
-  background: white;
-  border-radius: var(--border-radius);
-  padding: 2.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group:last-child {
-  margin-bottom: 0;
-}
-
-.form-label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: var(--dark);
-}
-
-.form-control {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: var(--border-radius);
-  transition: var(--transition);
-  font-family: inherit;
-}
-
-.form-control:focus {
-  outline: none;
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.2);
-}
-
-textarea.form-control {
-  min-height: 150px;
-  resize: vertical;
-}
 
 /* Footer */
 footer {
@@ -1633,6 +1714,21 @@ footer {
   .section-title h2 {
     font-size: 2.2rem;
   }
+  
+  /* Contact Page Responsive */
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contact-form,
+  .contact-sidebar {
+    padding: 2rem;
+  }
+  
+  .contact-sidebar h3 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1642,6 +1738,24 @@ footer {
   
   .title-stack h2 {
     font-size: 1.3rem;
+  }
+  
+  /* Mobile Contact Form Improvements */
+  .contact-form,
+  .contact-sidebar {
+    padding: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  .contact-sidebar .contact-info li {
+    margin-bottom: 1.5rem;
+  }
+  
+  #contact-main {
+    padding-top: 3rem;
   }
   
   .nav-links {
