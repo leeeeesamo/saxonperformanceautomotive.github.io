@@ -1723,71 +1723,83 @@ footer {
   }
 }
 
-/* Gallery Page Styles */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+
+/* Service Areas Page Styles */
+.service-areas-visual {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 3rem auto;
 }
 
-.gallery-item {
-  background: white;
-  border-radius: var(--border-radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow);
+.area-badge {
+  background: linear-gradient(135deg, var(--brand-navy), #1a2a4a);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: var(--transition);
 }
 
-.gallery-item:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
+.area-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
 
-.gallery-placeholder {
-  padding: 3rem 2rem;
-  text-align: center;
-  background: var(--light-gray);
-  min-height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.service-areas-list {
+  text-align: left;
+  max-width: 600px;
+  margin: 2rem auto 0;
 }
 
-.gallery-placeholder i {
-  font-size: 3rem;
-  color: var(--brand-red);
-  margin-bottom: 1.5rem;
-}
-
-.gallery-placeholder h3 {
+.service-areas-list h4 {
   font-family: var(--font-primary);
-  font-size: 1.3rem;
-  font-weight: 600;
   color: var(--brand-navy);
-  margin-bottom: 0.5rem;
+  margin: 1.5rem 0 0.5rem 0;
+  font-size: 1.1rem;
 }
 
-.gallery-placeholder p {
+.service-areas-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.service-areas-list li {
+  background: var(--light-gray);
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
   color: var(--dark-gray);
-  font-size: 1rem;
-  margin: 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.service-areas-list li::before {
+  content: '📍';
+  position: absolute;
+  left: 0.4rem;
 }
 
 @media (max-width: 768px) {
-  .gallery-grid {
+  .service-areas-visual {
+    gap: 0.5rem;
+  }
+  
+  .area-badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .service-areas-list ul {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .gallery-placeholder {
-    padding: 2rem 1.5rem;
-    min-height: 200px;
-  }
-  
-  .gallery-placeholder i {
-    font-size: 2.5rem;
   }
 }
 
