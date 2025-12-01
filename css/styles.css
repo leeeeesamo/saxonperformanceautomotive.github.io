@@ -265,6 +265,8 @@ p {
   display: flex;
   align-items: center;
   gap: 2rem;
+  position: relative;
+  z-index: 10;
 }
 
 .nav-links a {
@@ -1656,6 +1658,7 @@ footer {
     background: var(--brand-navy);
     padding: 2rem;
     box-shadow: var(--shadow-lg);
+    z-index: 999;
   }
   
   .nav-links.mobile-open a {
@@ -1666,6 +1669,32 @@ footer {
   .nav-links.mobile-open a.btn {
     margin-top: 1rem;
     margin-left: 0;
+  }
+}
+
+/* Desktop: Ensure mobile-open styles are completely disabled */
+@media (min-width: 769px) {
+  .nav-links.mobile-open {
+    position: static !important;
+    display: flex !important;
+    flex-direction: row !important;
+    background: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    z-index: 10 !important;
+  }
+  
+  .nav-links.mobile-open a {
+    padding: 0.5rem 0 !important;
+    border-bottom: none !important;
+  }
+  
+  .nav-links.mobile-open a.btn {
+    margin-top: 0 !important;
+    margin-left: 1.5rem !important;
   }
 }
 

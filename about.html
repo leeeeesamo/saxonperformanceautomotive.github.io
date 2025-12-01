@@ -162,33 +162,87 @@
   </footer>
 
 <script>
-    // Mobile navigation toggle
-    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    
-    if (mobileNavToggle && navLinks) {
-      mobileNavToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('mobile-open');
-        const icon = mobileNavToggle.querySelector('i');
-        if (navLinks.classList.contains('mobile-open')) {
-          icon.classList.remove('fa-bars');
-          icon.classList.add('fa-times');
-        } else {
+    // Mobile navigation toggle with enhanced error handling
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      
+      // Ensure mobile menu is closed on page load (especially on desktop)
+      if (window.innerWidth > 768 && navLinks && navLinks.classList.contains('mobile-open')) {
+        navLinks.classList.remove('mobile-open');
+        const icon = mobileNavToggle?.querySelector('i');
+        if (icon) {
           icon.classList.remove('fa-times');
           icon.classList.add('fa-bars');
         }
-      });
+      }
       
-      // Close mobile nav when clicking on a link
-      navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          navLinks.classList.remove('mobile-open');
+      if (mobileNavToggle && navLinks) {
+        mobileNavToggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          navLinks.classList.toggle('mobile-open');
           const icon = mobileNavToggle.querySelector('i');
-          icon.classList.remove('fa-times');
-          icon.classList.add('fa-bars');
+          
+          if (navLinks.classList.contains('mobile-open')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+            // Add body scroll lock when menu is open
+            document.body.style.overflow = 'hidden';
+          } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+            // Remove body scroll lock when menu is closed
+            document.body.style.overflow = '';
+          }
         });
-      });
-    }
+        
+        // Close mobile nav when clicking on a link
+        navLinks.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function() {
+            navLinks.classList.remove('mobile-open');
+            const icon = mobileNavToggle.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+            // Remove body scroll lock
+            document.body.style.overflow = '';
+          });
+        });
+        
+        // Close mobile nav when clicking outside
+        document.addEventListener('click', function(e) {
+          if (navLinks.classList.contains('mobile-open') && 
+              !navLinks.contains(e.target) && 
+              !mobileNavToggle.contains(e.target)) {
+            navLinks.classList.remove('mobile-open');
+            const icon = mobileNavToggle.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+            // Remove body scroll lock
+            document.body.style.overflow = '';
+          }
+        });
+        
+        // Handle window resize - close mobile menu if switching to desktop
+        window.addEventListener('resize', function() {
+          if (window.innerWidth > 768 && navLinks.classList.contains('mobile-open')) {
+            navLinks.classList.remove('mobile-open');
+            const icon = mobileNavToggle.querySelector('i');
+            if (icon) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+            // Remove body scroll lock
+            document.body.style.overflow = '';
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>
