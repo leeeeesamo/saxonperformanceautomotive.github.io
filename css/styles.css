@@ -1651,7 +1651,7 @@ footer {
   }
   
   .mobile-nav-toggle {
-    display: block;
+    display: block !important;
   }
   
   .nav-links.mobile-open {
