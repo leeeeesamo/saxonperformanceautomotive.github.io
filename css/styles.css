@@ -1723,6 +1723,74 @@ footer {
   }
 }
 
+/* Gallery Page Styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.gallery-item {
+  background: white;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.gallery-placeholder {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: var(--light-gray);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-placeholder i {
+  font-size: 3rem;
+  color: var(--brand-red);
+  margin-bottom: 1.5rem;
+}
+
+.gallery-placeholder h3 {
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--brand-navy);
+  margin-bottom: 0.5rem;
+}
+
+.gallery-placeholder p {
+  color: var(--dark-gray);
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .gallery-placeholder {
+    padding: 2rem 1.5rem;
+    min-height: 200px;
+  }
+  
+  .gallery-placeholder i {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 576px) {
   .title-stack h1 {
     font-size: 2rem;
